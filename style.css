@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.rezultati{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rezultati td:nth-child(even){
+    background-color: rgb(223, 242, 248);
+}
+
+table{
+    width: 100%;
+    margin: 2em
+}
+
+thead tr td{
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+.no-data{
+    font-weight: 800;
+    font-style: oblique;
+    color: red;
+}
+
+#poruka{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#poruka p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Stilovi za kotačić */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #11aafc;
+    border-left: 4px solid #2bce0a;
+    border-radius: 50%;
+    position: relative;
+    
+    left: 55%;
+    animation: spin 1s linear infinite;
+    display: none;
+    z-index: 9999;
+    
+}
+
+/* animacija */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
