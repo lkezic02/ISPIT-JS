@@ -55,7 +55,6 @@ thead tr td{
     font-weight: 600;
 }
 
-/* Stilovi za kotačić */
 .spinner {
     width: 50px;
     height: 50px;
@@ -63,7 +62,6 @@ thead tr td{
     border-left: 4px solid #2bce0a;
     border-radius: 50%;
     position: relative;
-    
     left: 55%;
     animation: spin 1s linear infinite;
     display: none;
@@ -71,7 +69,7 @@ thead tr td{
     
 }
 
-/* animacija */
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
